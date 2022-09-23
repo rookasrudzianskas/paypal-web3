@@ -7,6 +7,7 @@ pragma solidity ^0.8.15;
 contract Transactions {
     uint256 transactionCount;
 
+}
 
 
 
