@@ -87,16 +87,16 @@ export const TransactionsProvider = ({ children }) => {
   const checkIfTransactionsExists = async () => {
     try {
       if (ethereum) {
-        const transactionsContract = createEthereumContract()
+        const transactionsContract = createEthereumContract();
         const currentTransactionCount =
-          await transactionsContract.getTransactionCount()
+          await transactionsContract.getTransactionCount();
 
-        window.localStorage.setItem('transactionCount', currentTransactionCount)
+        window.localStorage.setItem('transactionCount', currentTransactionCount);
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
 
-      throw new Error('No ethereum object')
+      throw new Error('No ethereum object');
     }
   }
 
