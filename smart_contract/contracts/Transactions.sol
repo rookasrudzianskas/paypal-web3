@@ -5,7 +5,10 @@ pragma solidity ^0.8.15;
 
 
 contract Transactions {
+    // Number of transactions
     uint256 transactionCount;
+    // This will be an event that will be fired when a transaction is created
+    event Transfer(address from, address receiver, uint amount, string message);
 
 }
 
