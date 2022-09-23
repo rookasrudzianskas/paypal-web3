@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className={styles.logoContainer}>
           <img
             className={styles.logoImage}
-            src="/src/assets/venmo-logo.svg"
+            src="https://logos-world.net/wp-content/uploads/2021/11/Venmo-Logo.png"
             alt="Venmo Logo"
           />
         </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className={styles.avatarContainer}>
               <img
                 className={styles.avatarImage}
-                src="https://yeeqiang.me/avatar.jpeg"
+                src="https://avatars.githubusercontent.com/u/38469892?v=4"
                 alt=""
               />
             </div>
