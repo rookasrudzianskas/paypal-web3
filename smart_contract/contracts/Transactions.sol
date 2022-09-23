@@ -40,6 +40,8 @@ contract Transactions {
     function getTransactionCount() public view returns (uint256) {
         return transactionCount;
     }
+
+    // View keyword means that the function can be only used to view the data. No crypto will be sent to the function and no data will be changed.
 }
 
 
