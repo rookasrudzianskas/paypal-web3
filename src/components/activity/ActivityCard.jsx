@@ -19,7 +19,7 @@ function ActivityCard() {
       <div className={styles.tabContainer}>
         <p className={styles.tabTitle}>Activity</p>
         <div className={styles.navigationContainer}>
-          <div className={styles.navigationItem} data-current>
+          <div className={styles.navigationItem}>
             <GlobeIcon className={styles.navigationIcon} />
           </div>
           <div className={styles.navigationItem}>
