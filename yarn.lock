@@ -6521,7 +6521,7 @@ jake@^10.8.5:
 
 javascript-time-ago@^2.5.7:
   version "2.5.7"
-  resolved "https://registry.npmjs.org/javascript-time-ago/-/javascript-time-ago-2.5.7.tgz"
+  resolved "https://registry.yarnpkg.com/javascript-time-ago/-/javascript-time-ago-2.5.7.tgz#a99a77c23e2e59810da4b41b935801928e209c87"
   integrity sha512-EGvh6K4hpJz0S0aZinbW2EfXDqT/JBB84HfMOFDTzGg7yjpjql9feSgtlG1JQ6b6/NkIxl+PoKSUTEMsatTuTg==
   dependencies:
     relative-time-format "^1.1.4"
