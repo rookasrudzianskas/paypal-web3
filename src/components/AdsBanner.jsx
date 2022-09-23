@@ -5,7 +5,7 @@ function AdsBanner() {
     <div className={styles.container}>
       <div className={styles.bannerContent}>
         <div className={styles.bannerEmojis}>🚀 🧠 🧑‍💻</div>
-        <h3 className={styles.bannerTitle}>Clever Programmer</h3>
+        <h3 className={styles.bannerTitle}>Rokas Rudzianskas</h3>
         <p className={styles.bannerDescription}>
           Biggest Companies Are Powered by aspiring DEVELOPERS just like you 💪
         </p>
@@ -14,7 +14,7 @@ function AdsBanner() {
           <button className={styles.ctaButton} type="button">
             <img
               className={styles.ctaButtonImage}
-              src="/src/assets/app-store-download.png"
+              src="https://whattudu.com/wp-content/uploads/2017/06/app-store-logo.png"
               alt="Download on the App Store"
             />
           </button>
@@ -22,7 +22,7 @@ function AdsBanner() {
           <button className={styles.ctaButton} type="button">
             <img
               className={styles.ctaButtonImage}
-              src="/src/assets/google-play-download.png"
+              src="https://www.edsys.in/wp-content/uploads/Play-Store-Logo-2.png"
               alt="Get it on Google Play"
             />
           </button>
