@@ -8,7 +8,16 @@ contract Transactions {
     // Number of transactions
     uint256 transactionCount;
     // This will be an event that will be fired when a transaction is created
-    event Transfer(address from, address receiver, uint amount, string message);
+    event Transfer(address from, address receiver, uint amount, string message, uint timestamp);
+
+    // Struct of the transaction that will be stored on the chain
+    struct Transaction {
+        address sender;
+        address receiver;
+        uint amount;
+        string message;
+        uint256 timestamp;
+    }
 
 }
 
