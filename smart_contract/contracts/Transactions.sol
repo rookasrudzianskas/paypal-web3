@@ -28,13 +28,18 @@ contract Transactions {
         transactionCount += 1;
         transactions.push(TransferStruct(msg.sender, receiver, amount, message, block.timestamp));
 
+        // emit the events we created above
         emit Transfer(msg.sender, receiver, amount, message, block.timestamp);
     }
 
-    // Function to get the number of transactions
-
-
-
+    // Function to get all the transactions from the blockchain
+    function getAllTransactions() public view returns (TransferStruct[] memory) {
+        return transactions;
+    }
+    // function get the number of transactions
+    function getTransactionCount() public view returns (uint256) {
+        return transactionCount;
+    }
 }
 
 
