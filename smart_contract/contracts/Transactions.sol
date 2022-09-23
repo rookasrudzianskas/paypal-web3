@@ -8,16 +8,32 @@ contract Transactions {
     // Number of transactions
     uint256 transactionCount;
     // This will be an event that will be fired when a transaction is created
-    event Transfer(address from, address receiver, uint amount, string message, uint timestamp);
+    event Transfer(address from, address receiver, uint amount, string message, uint256 timestamp);
 
     // Struct of the transaction that will be stored on the chain
-    struct Transaction {
+    struct TransferStruct {
         address sender;
         address receiver;
         uint amount;
         string message;
         uint256 timestamp;
+
     }
+
+    // Array of transactions
+    TransferStruct[] transactions;
+
+    // Function to add transaction to the blockchain
+    function addToBlockchain(address payable receiver, uint amount, string memory message) public {
+        transactionCount += 1;
+        transactions.push(TransferStruct(msg.sender, receiver, amount, message, block.timestamp));
+
+        emit Transfer(msg.sender, receiver, amount, message, block.timestamp);
+    }
+
+    // Function to get the number of transactions
+
+
 
 }
 
